@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "My Skill Bank - Document Definition Configuration",
+    "description": "https://pdfmake.github.io/docs/0.1/document-definition-object/document-medatadata/",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "title": {
+            "description": "the title of the document",
+            "type": "string"
+        },
+        "author": {
+            "description": "the name of the author",
+            "type": "string"
+        },
+        "subject": {
+            "description": "the subject of the document",
+            "type": "string"
+        },
+        "keywords": {
+            "description": "keywords associated with the document",
+            "type": "string"
+        },
+        "creator": {
+            "description": "the creator of the document (default is ‘pdfmake’)",
+            "type": "string"
+        },
+        "producer": {
+            "description": "the producer of the document (default is ‘pdfmake’)",
+            "type": "string"
+        },
+        "creationDate": {
+            "description": "the date the document was created (added automatically by pdfmake)",
+            "type": "string",
+            "format": "date"
+        },
+        "modDate": {
+            "description": "the date the document was last modified",
+            "type": "string",
+            "format": "date"
+        },
+        "trapped": {
+            "description": "the trapped flag in a PDF document indicates whether the document has been “trapped”, i.e. corrected for slight color misregistrations",
+            "type": "string"
+        }
+    },
+    "required": [
+        "title",
+        "author",
+        "subject",
+        "keywords"
+    ]
+}

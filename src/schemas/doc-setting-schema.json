@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "My Skill Bank - Document Setting Configuration",
+    "description": "",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "docName": {
+            "description": "document name",
+            "type": "string"
+        },
+        "tableHeaderColor": {
+            "description": "the background color of table header",
+            "type": "string"
+        },
+        "fontName": {
+            "description": "font name",
+            "type": "string"
+        }
+    },
+    "required": [
+        "docName",
+        "tableHeaderColor",
+        "fontName"
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "My Skill Bank - Projects Configuration",
+    "type": "array",
+    "items": [
+        {
+            "type": "object",
+            "properties": {
+                "workPeriod": {
+                    "description": "作業期間",
+                    "type": "object",
+                    "properties": {
+                        "start": {
+                            "description": "開始年月",
+                            "type": "string"
+                        },
+                        "end": {
+                            "description": "終了年月",
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "start"
+                    ]
+                },
+                "jobDescription": {
+                    "description": "業務内容",
+                    "type": "string"
+                },
+                "jobRole": {
+                    "description": "担当業務",
+                    "type": "string"
+                },
+                "envLang": {
+                    "description": "環境/言語等",
+                    "type": "string"
+                },
+                "roleScale": {
+                    "description": "役割/規模",
+                    "type": "string"
+                },
+                "memorandum": {
+                    "description": "備忘録",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "workPeriod",
+                "jobDescription",
+                "jobRole",
+                "envLang",
+                "roleScale"
+            ]
+        }
+    ],
+    "minItems": 1
+}

@@ -1,0 +1,90 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "My Skill Bank - Resume Configuration",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "nameKana": {
+            "description": "氏名のふりがな",
+            "type": "string"
+        },
+        "nameKanji": {
+            "description": "氏名の漢字",
+            "type": "string"
+        },
+        "birthday": {
+            "description": "生年月日",
+            "type": "string",
+            "format": "date"
+        },
+        "gender": {
+            "description": "性別",
+            "type": "string"
+        },
+        "address": {
+            "description": "住所",
+            "type": "string"
+        },
+        "closestStation": {
+            "description": "最寄駅",
+            "type": "string"
+        },
+        "emailAddress": {
+            "description": "メールアドレス",
+            "type": "string",
+            "format": "email"
+        },
+        "phoneNumber": {
+            "description": "電話番号",
+            "type": "string"
+        },
+        "qualification": {
+            "description": "保有資格",
+            "type": "string"
+        },
+        "skill": {
+            "description": "保有技術",
+            "type": "string"
+        },
+        "jobSummary": {
+            "description": "職務要約",
+            "type": "string"
+        },
+        "selfPromotion": {
+            "description": "自己PR",
+            "type": "string"
+        },
+        "bioLinks": {
+            "description": "HP等",
+            "type": "array",
+            "items": {
+                "name": {
+                    "description": "リンクの名前",
+                    "type": "string"
+                },
+                "url": {
+                    "description": "リンクのURL",
+                    "type": "string",
+                    "format": "uri"
+                }
+            },
+            "required": [
+                "name",
+                "url"
+            ]
+        },
+        "memorandum": {
+            "description": "備忘録",
+            "type": "string"
+        }
+    },
+    "required": [
+        "nameKana",
+        "nameKanji",
+        "birthday",
+        "gender",
+        "skill",
+        "jobSummary",
+        "selfPromotion"
+    ]
+}
