@@ -16,9 +16,13 @@
 
 My Skill Bank を使用するための準備を行います。
 
-1. My Skill Bank の[テンプレート](https://github.com/st-little/my-skill-bank-boilerplate)から **プライベートリポジトリ** を作成します。
+1. My Skill Bank の[テンプレート](https://github.com/st-little/my-skill-bank-boilerplate)から新しいリポジトリを作成します。
 
    - 詳細は [テンプレートからリポジトリを作成する](https://docs.github.com/ja/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) を参照してください。
+
+1. 作成したリポジトリをプライベートにします。
+
+   - 詳細は [リポジトリの可視性を設定する](https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility) を参照してください。
 
 1. 作成したプライベートリポジトリをホストマシンにクローンします。
 
